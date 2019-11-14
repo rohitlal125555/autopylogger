@@ -36,6 +36,7 @@ Important Flags:
 	By default, rotation criteria 'size' is used with max file size of 200 Mbs.
 	
 	--> When choosing 'size' based rotation critera, pass the argument value 'max_bytes' to specify the max size of log file in bytes.
+	
 	--> When choosing 'time' based rotation critera, pass the argument value 'rotate_when' & 'rotate_interval'.
 
 		'max_bytes' = 5*1024*1024
