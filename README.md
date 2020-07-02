@@ -16,8 +16,6 @@ Requirements: logging
         from autopylogger import init_logging
         my_logger_obj = init_logging(log_name='my_logs', log_directory='logs_dir', enable_mailing=True, mail_host='mymail.host.com', mailfrom_addr='<email_address>', mailto_addr='<email_address>', mail_subject='<subject>', mail_credentials=('<username>', '<password>'))
 
-    *NOTE: Critical errors mailing feature is by default ON from version greater than v2020.2.11*
-
 
 - Use the object for writing DEBUG|INFO|WARNING|ERROR logs
 
@@ -57,7 +55,8 @@ Requirements: logging
         'rotate_interval' = 1 (for rotating log every 1 day|hour|minute|second)
   
   - When choosing **"timeandsize"** based rotation criteria, pass the argument value **"rotate_when"**,**"rotate_interval"** & **'max_bytes'**.
-
+        
+        'mail_host' = 'mail server hostname or ip address'
         'rotation_criteria' = 'timeandsize'
         'max_bytes' = 5*1024*1024
         'rotate_when' = 'd' | 'h' | 'm' | 's'
