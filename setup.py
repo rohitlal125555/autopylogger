@@ -11,7 +11,7 @@ setuptools.setup(
     description="Wrapper module for logging with out of box log rotation and mailing feature",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://rohitlal.in",
+    url="https://github.com/rohitlal125555/autopylogger/",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
