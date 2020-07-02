@@ -4,19 +4,19 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="python_log_rotate",
-    version="2019.11.04",
-    author="Rohit Lal",
-    author_email="rohitlal.125555@gmail.com",
-    description="Python thread-safe logging wrapper module with out of box log rotation facility built for seamless integration in any python script.",
+    name="autopylogger",
+    version="1.0",
+    author="Rohit Lal @rohitlal125555",
+    author_email="rohitlal125555@gmail.com",
+    description="Wrapper module for logging with out of box log rotation and mailing feature",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="http://rohitlal.in",
+    url="https://rohitlal.in",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved",
+        "License :: GNU GENERAL PUBLIC LICENSE",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.3',
 )

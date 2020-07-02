@@ -1,0 +1,8 @@
+README.md
+setup.py
+autopylogger/__init__.py
+autopylogger/autopylogger.py
+autopylogger.egg-info/PKG-INFO
+autopylogger.egg-info/SOURCES.txt
+autopylogger.egg-info/dependency_links.txt
+autopylogger.egg-info/top_level.txt

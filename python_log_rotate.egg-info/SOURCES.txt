@@ -1,8 +1,0 @@
-README.md
-setup.py
-python_log_rotate/__init__.py
-python_log_rotate/python_log_rotate.py
-python_log_rotate.egg-info/PKG-INFO
-python_log_rotate.egg-info/SOURCES.txt
-python_log_rotate.egg-info/dependency_links.txt
-python_log_rotate.egg-info/top_level.txt
