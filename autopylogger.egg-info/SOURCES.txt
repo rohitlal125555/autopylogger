@@ -1,4 +1,5 @@
 README.md
+setup.cfg
 setup.py
 autopylogger/__init__.py
 autopylogger/autopylogger.py

@@ -5,18 +5,21 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="autopylogger",
+    packages = ['autopylogger'], 
     version="1.0",
+    license='MIT',
+    description="Wrapper module for logging with out of box log rotation and critical errors mailing feature",
     author="Rohit Lal @rohitlal125555",
     author_email="rohitlal125555@gmail.com",
-    description="Wrapper module for logging with out of box log rotation and mailing feature",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/rohitlal125555/autopylogger/",
-    packages=setuptools.find_packages(),
+    keywords = ['logging', 'autologging', 'pyautologging', 'python logger', 'log rotate', 'log rotation', 'log mailing'],
     classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
-        "License :: GNU GENERAL PUBLIC LICENSE",
-        "Operating System :: OS Independent",
     ],
-    python_requires='>=3.3',
 )

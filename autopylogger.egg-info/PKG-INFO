@@ -1,11 +1,11 @@
 Metadata-Version: 2.1
 Name: autopylogger
 Version: 1.0
-Summary: Wrapper module for logging with out of box log rotation and mailing feature
-Home-page: https://rohitlal.in
+Summary: Wrapper module for logging with out of box log rotation and critical errors mailing feature
+Home-page: https://github.com/rohitlal125555/autopylogger/
 Author: Rohit Lal @rohitlal125555
 Author-email: rohitlal125555@gmail.com
-License: UNKNOWN
+License: MIT
 Description: # autopylogger
         
         Python thread-safe logging wrapper module with out of box log rotation and critical logs mailing facility built for seamless integration in any python script.
@@ -23,8 +23,6 @@ Description: # autopylogger
         
                 from autopylogger import init_logging
                 my_logger_obj = init_logging(log_name='my_logs', log_directory='logs_dir', enable_mailing=True, mail_host='mymail.host.com', mailfrom_addr='<email_address>', mailto_addr='<email_address>', mail_subject='<subject>', mail_credentials=('<username>', '<password>'))
-        
-            *NOTE: Critical errors mailing feature is by default ON from version greater than v2020.2.11*
         
         
         - Use the object for writing DEBUG|INFO|WARNING|ERROR logs
@@ -65,7 +63,8 @@ Description: # autopylogger
                 'rotate_interval' = 1 (for rotating log every 1 day|hour|minute|second)
           
           - When choosing **"timeandsize"** based rotation criteria, pass the argument value **"rotate_when"**,**"rotate_interval"** & **'max_bytes'**.
-        
+                
+                'mail_host' = 'mail server hostname or ip address'
                 'rotation_criteria' = 'timeandsize'
                 'max_bytes' = 5*1024*1024
                 'rotate_when' = 'd' | 'h' | 'm' | 's'
@@ -108,9 +107,11 @@ Description: # autopylogger
         | %(threadName)s | Thread name (if available). |
         
         
+Keywords: logging,autologging,pyautologging,python logger,log rotate,log rotation,log mailing
 Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3
-Classifier: License :: GNU GENERAL PUBLIC LICENSE
-Classifier: Operating System :: OS Independent
-Requires-Python: >=3.3
 Description-Content-Type: text/markdown
