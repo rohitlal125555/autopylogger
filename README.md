@@ -4,7 +4,15 @@ Python thread-safe logging wrapper module with out of box log rotation and criti
 
 Requirements: logging
 
-#### Basic Usage :
+
+## Installation
+
+    pip install autopylogger 
+
+PYPI Repository - https://pypi.org/project/autopylogger/
+
+
+### Basic Usage :
 
 - Initialize your logger object by calling the 'init_logging' function *(with mailing feature turned OFF)*
 
