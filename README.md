@@ -1,4 +1,4 @@
-# autopylogger
+# AutoPyLogger
 
 Python thread-safe logging wrapper module with out of box log rotation and critical logs mailing facility built for seamless integration in any python script.
 
