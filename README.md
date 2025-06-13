@@ -43,13 +43,13 @@ PYPI Repository - https://pypi.org/project/autopylogger/
 
         console_log = True | False
     
-    *NOTE: It is adviced to turn OFF console logging in production environments when your program is running as service to  prevent flushing of system console logs with your info messages. Eg: In linux systems.*
+    *NOTE: It is advised to turn OFF console logging in production environments when your program is running as a service to  prevent flushing of system console logs with your info messages. E.g., In Linux systems.*
     
 - **Setting log rotation criteria:** *Pass the appropriate value to the **"rotation_criteria"** flag.*
 
         rotation_criteria = 'size' | 'time' | 'timeandsize'
 
-  By default, rotation criteria **"size"** is used with max file size of 200 Mbs.
+  By default, the rotation criteria **"size"** is used with a max file size of 200 MB.
   
   - When choosing 'size' based rotation criteria, pass the argument value **'max_bytes'** to specify the max size of log file in bytes.
 
@@ -73,9 +73,9 @@ PYPI Repository - https://pypi.org/project/autopylogger/
   *NOTE: In "timeandsize" rotation criteria, a file is rotate when either of the time or size constraint gets satisfied."*
   
   
-- **Turning critical mailing ON/OFF:** *Pass the boolean value (TRUE|FALSE) to the **"enable_mailing"** flag. By default mailing is enabled for critical errors.*
+- **Turning critical mailing ON/OFF:** *Pass the boolean value (TRUE|FALSE) to the **"enable_mailing"** flag. By default, mailing is enabled for critical errors.*
    
-  - When **"enable_mailing"** is set to True, following flags are required. 
+  - When **"enable_mailing"** is set to True, the following flags are required. 
 
         'mailfrom_addr' = '<Sender email address>'
         'mailto_addr' = '<Receiver email address>'
@@ -91,7 +91,7 @@ PYPI Repository - https://pypi.org/project/autopylogger/
    
 | Format | Description |
 | ------ | ------ |
-| %(asctime)s | Human-readable time when the LogRecord was created. By default this is of the form ‘2003-07-08 16:49:45,896’ (the numbers after the comma are millisecond portion of the time). |
+| %(asctime)s | Human-readable time when the LogRecord was created. By default, this is of the form ‘2003-07-08 16:49:45,896’ (the numbers after the comma are millisecond portion of the time). |
 | %(created)f | Time when the LogRecord was created (as returned by time.time()). |
 | %(filename)s | Filename portion of pathname. |
 | %(funcName)s | Name of function containing the logging call. |
